@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
+
+:root{
+    --darkgreen : #495E57;
+}
+*{
+    margin: 0;
+}
+h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+body{
+    width: 1440px;
+    height: 2900px;
+    font-family: 'Karla', sans-serif;
+}
+.container{
+    width: 887px;
+}
+.navbar{
+    max-width: 887px;
+    margin: 0 auto;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navItems li a{
+   color: black;
+   text-decoration: none;
+   font-weight: 200;
+   font-size: 20px;
+}
+
+.footerSection{
+    background-color: var(--darkgreen);
+    height: 417px;
+    width:1440px;
+}
+
+.footerContainer{
+    max-width: 887px;
+    gap: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.footerimage img{
+    width: 162px;
+    height: 279px;
+   margin-top: 80px;
+   border-radius: 16px;
+}
+
+.footerNavSection{
+    display: flex;
+    justify-items: center;
+    gap: 16px;
+}
+
+.footerNav{
+    max-width: 210px;
+    display: grid;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+.footerNavbar a{
+    display: grid;
+    gap:10px;
+    flex-direction: column;
+    justify-content: start;
+    text-decoration: none;
+    color: black;
+}
+
+.contact{
+    display: grid;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts{
+    display: grid;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.socialmediaIcons{
+   margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fb :hover{
+    color: #3b5998 ;
+}
+.insta :hover{
+    color: #cd486b ;
+}
+.linkedIn :hover{
+    color: #0A66C2;
+}
+.gitHub :hover{
+    color: #2b3137;
+}
