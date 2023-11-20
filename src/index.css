@@ -2,6 +2,7 @@
 
 :root{
     --darkgreen : #495E57;
+    --yellow : #f4CE14;
 }
 *{
     margin: 0;
@@ -16,7 +17,9 @@ body{
     font-family: 'Karla', sans-serif;
 }
 .container{
-    width: 887px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 2fr 1fr;
 }
 .navbar{
     max-width: 887px;
@@ -25,7 +28,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
 }
 
 .navbar ul{
@@ -40,17 +42,23 @@ body{
    font-weight: 200;
    font-size: 20px;
 }
-
+.tag:hover{
+    color: var(--yellow);
+}
 .footerSection{
     background-color: var(--darkgreen);
     height: 417px;
     width:1440px;
+}
+.mobile-menu-toggle {
+    display: none; /* Hide the menu toggle button by default */
 }
 
 .footerContainer{
     max-width: 887px;
     gap: 20px;
     display: flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-evenly;
     align-items: center;
@@ -67,7 +75,7 @@ body{
 .footerNavSection{
     display: flex;
     justify-items: center;
-    gap: 16px;
+    gap: 30px;
 }
 
 .footerNav{
@@ -85,9 +93,11 @@ body{
     justify-content: start;
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .contact{
+    max-width:210px ;
     display: grid;
     flex-direction: column;
     gap: 20px;
@@ -99,6 +109,10 @@ body{
     gap: 10px;
 }
 
+
+.socialmediaLinks{
+    max-width: 210px;
+}
 .socialmediaIcons{
    margin-top: 30px;
     display: flex;
@@ -117,4 +131,66 @@ body{
 }
 .gitHub :hover{
     color: #2b3137;
+}
+
+@media screen and (max-width: 768px) {
+    h3{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    p{
+        font-size: 10px;
+    }
+    .mobile-menu-toggle {
+        display: block; /* Display the menu toggle button for smaller screens */
+        color: red;
+    }
+
+    .navbar ul {
+        display: none; /* Hide the navigation menu by default on smaller screens */
+    }
+
+    .navbar ul.active {
+        display: flex; /* Display the navigation menu when active */
+        flex-direction: column;
+        background-color:white; /* Set background color for mobile menu */
+        position: absolute;
+        top: 72px; /* Adjust top position as needed */
+        left: 380px;
+        width: 50%;
+        padding: 16px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for the mobile menu */
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px; /* Adjust spacing between menu items */
+    }
+    .tag:hover{
+        color: var(--yellow);
+    }
+
+    .footerContainer{
+        width: 100%;
+        gap: 10px;
+        display: grid;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .footerimage img{
+        width: 80px;
+        height: 120px;
+       border-radius: 16px;
+    }
+    .socialmediaIcons{
+        margin-top: 30px;
+         display: grid;
+         flex-direction: column;
+         gap: 10px;
+         font-size: 20px;
+         cursor: pointer;
+     }
+
 }
