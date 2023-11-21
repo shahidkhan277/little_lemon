@@ -1,0 +1,90 @@
+.footerSection{
+    background-color: var(--darkgreen);
+    padding: 60px 0;
+}
+
+.footerContainer{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+.footerContainer p{
+    width: 60%;
+    margin: 10px 0 60px;
+}
+
+.footerimage img{
+    width: 80px;
+}
+
+.footerNavSection{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 20px;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.footerNavSection ul li{
+    margin-top: 10px;
+    list-style: none;
+}
+.footerNavSection a{
+    color: #fff;
+}
+
+
+.socialmediaIcons{
+   margin-top: 30px;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.fb{
+    color: #3b5998 ;
+}
+.insta{
+    color: #cd486b ;
+}
+.linkedIn{
+    color: #0A66C2;
+}
+.gitHub{
+    color: #2b3137;
+}
+
+@media screen and (max-width: 1024px) {
+    .footerContainer {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .footerContainer p {
+        width: 90%;
+        font-size: smaller;
+    }
+
+    .footerNavSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerNavSection h3 {
+        margin-bottom: 20px;
+        font-size: smaller;
+    }
+
+    .footerNavSection ul {
+        margin-bottom: 40px;
+    }
+
+    .footerNavSection ul li {
+        font-size: smaller;
+    }
+  }

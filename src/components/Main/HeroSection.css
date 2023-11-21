@@ -1,0 +1,121 @@
+.heroSection{
+    width: 100%;
+    background-color: var(--darkgreen);
+}
+
+.heroSectionContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    padding: 60px 0;
+    color: #fff;
+
+}
+
+.sectionLeft{
+    width: 80%;
+
+}
+.sectionLeft h1{
+    color: var(--yellow);
+}
+
+.sectionLeft h1 h2{
+    line-height: 0.8;
+}
+
+.sectionLeft p{
+    width: 75%;
+    margin: 20px 0;
+}
+
+.btn{
+    padding: 15px  30px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: var(--yellow);
+    color: #333333;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #333333;
+    color: var(--yellow);
+    transition: ease-in-out 0.3s;
+}
+
+.sectionRight{
+    width: 400px;
+    position: relative;
+}
+
+.imgBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    border-radius: 10px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.imgBox img {
+    width:100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .heroSection {
+        padding-top: 10vh;
+    }
+
+    .imgBox {
+        right: 0;
+        width: 300px;
+        height: 370px;
+    }
+
+    .heroSectionContainer {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .sectionLeft h1 {
+        font-size: 50px;
+      }
+      h2 {
+        font-size: 34px;
+      }
+}
+
+
+
+
+@media screen and (max-width: 659px) {
+    .heroSectionContainer {
+        flex-direction: row;
+    }
+
+    .imgBox {
+        width: 80%;
+        height: 250px;
+        position: initial;
+    }
+
+    .sectionLeft p {
+        width: 100%;
+        font-size: smaller;
+    }
+
+    .sectionRight {
+        position: initial;
+        margin-top: 30px;
+        margin-bottom: -100px;
+        width: 100%;
+    }
+
+    .btn {
+        font-size: smaller;
+    }
+}
