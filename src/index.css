@@ -19,32 +19,16 @@ h3{
     font-size: 20px;
     font-weight: 500;
 }
- /* Starting of Nava section */
 
 
 .tag{
-    text-decoration: none
+    text-decoration: none;
 }
 .tag:hover{
     color: var(--yellow);
-    ;
 }
 
 
-.highlightsSection{
-    height: 670px;
-    width: 100%;
-}
-
-.testimonialsSection{
-    height: 590px;
-    width: 100%;
-}
-
-.about{
-    height: 468px;
-    width: 100%;
-}
 
 
 

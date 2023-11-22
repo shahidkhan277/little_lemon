@@ -1,7 +1,9 @@
 import React from 'react'
-import About from './About'
 import HeroSection from './Main/HeroSection'
 import Highlights from './Main/Highlights'
+import Testimonials from './Main/Testimonials'
+import About from './About/About'
+
 
 const Main = () => {
   return (
@@ -13,11 +15,10 @@ const Main = () => {
       <section className='highlightsSection'>
           <Highlights/>
       </section>
-      <section className="testimonialsSection">
-        <h1>TestiMonilas</h1>
+      <section  className="testimonialsSection">
+        <Testimonials/>
       </section>
     </main>
-    <About/>
     </>
   )
 }
