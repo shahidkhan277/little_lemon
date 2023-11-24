@@ -39,7 +39,7 @@ const Highlights = () => {
 
   return (
     <div>
-     <div className="highlightsCardContainer">
+     <div id="menu" className="highlightsCardContainer">
         <div className="cardImage">
             <img src={image} alt="" />
         </div>

@@ -4,7 +4,8 @@ import "./About.css";
 
 const About = () => {
   return (
-    <article className='aboutSection'>
+    <article id="about" className='aboutSection'>
+         <h2 style={{textAlign:"center"}}>About us</h2>
       <div className="aboutContainer">
         <div className="aboutLeftSection">
         <h1>Little Lemon</h1>

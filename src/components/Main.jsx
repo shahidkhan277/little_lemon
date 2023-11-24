@@ -19,6 +19,7 @@ const Main = () => {
         <Testimonials/>
       </section>
     </main>
+    <About/>
     </>
   )
 }

@@ -22,9 +22,22 @@
     text-decoration: none;
     color: black;
 }
+.nav-btn{
+    color: white;
+    background-color: var(--yellow);
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.nav-btn:hover{
+    background-color: var(--darkgreen);
+}
 .mobile-menu-toggle {
     display: none; /* Hide the menu toggle button by default */
 }
+
 
 /* End of Nav Section */
 @media screen and (max-width: 1024px) {

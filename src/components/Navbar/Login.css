@@ -1,0 +1,111 @@
+.popup {
+    color: #333333;
+    border-radius: 10px;
+    padding: 30px 40px 50px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-inner {
+    background-color: var(--darkgreen);
+    color: var(--yellow);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    width: 40%;
+}
+
+.popup-inner h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.popup-inner label {
+    font-size: 18px;
+    margin: 0 0 5px 0px;
+    font-weight: 500;
+}
+
+.popup-inner input {
+    padding: 10px;
+    border: 1px solid rgba(51, 51, 51, 0.3);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.popup-inner button[type="submit"],
+.popup-inner button[type="button"] {
+    background-color: var(--yellow);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.popup-inner button[type="submit"]:hover,
+.popup-inner button[type="button"]:hover {
+    background-color: var(--darkgreen);
+}
+
+.popup-inner button[type="submit"] {
+    margin-top: 20px;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close-btn {
+    margin-top: 0px;
+    color: #f44336;
+    font-size: 16px;
+    background-color: var(--darkgreen);
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #da190b;
+}
+
+.popup-inner button[type="submit"]:disabled {
+    background-color: #bfbfbf;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+.popup-inner button[type="button"]:disabled {
+    background-color: #bfbfbf;
+    color: #ffffff;
+    cursor: not-allowed;
+}
+
+.signUp-btn{
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.signUpText{
+    color: white;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+}
