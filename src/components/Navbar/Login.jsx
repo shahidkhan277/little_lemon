@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { IoCloseCircle } from "react-icons/io5";
 import "./Login.css";
-import SignUpForm from "./SignUpForm";
 
 const Login = (props) => {
   const [username, setUsername] = useState('')
